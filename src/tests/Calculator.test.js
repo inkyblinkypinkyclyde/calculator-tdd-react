@@ -85,7 +85,7 @@ describe('Calculator', () => {
     fireEvent.click(buttonAddition);
     const button2 = container.getByTestId('number2');
     fireEvent.click(button2);
-    const buttonMultiply = container.getByTestId('operator-multiply')
+    const buttonMultiply = container.getByTestId('operator-multiply');
     fireEvent.click(buttonMultiply);
     const button3 = container.getByTestId('number3');
     fireEvent.click(button3);
@@ -114,7 +114,7 @@ describe('Calculator', () => {
     fireEvent.click(button0);
     fireEvent.click(buttonEquals);
     const runningTotal = container.getByTestId('running-total');
-    expect(runningTotal.textContent).toEqual('25')
+    expect(runningTotal.textContent).toEqual('25');
 
 
 
